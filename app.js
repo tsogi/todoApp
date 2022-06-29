@@ -16,6 +16,7 @@ app.get('/', (req, res) => {
 })
 	
 app.get('/readTodos', async (req, res) => {
+	// Comment by Nika
 	let collection = await connectDB();
 
 	const findResult = await collection.find({}).toArray();
